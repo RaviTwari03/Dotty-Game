@@ -8,17 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var path: [String] = []
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack(path: $path) {
+            WelcomeScreen(
+                onExplore: { path.append("GameInfo") },
+                onStartGame: { path.append("Game") }
+            )
+            .navigationDestination(for: String.self) { screen in
+                switch screen {
+                case "GameInfo":
+                    GameInfoScreen()
+                case "Game":
+                    GameScreen()
+                default:
+                    WelcomeScreen(
+                        onExplore: { path.append("GameInfo") },
+                        onStartGame: { path.append("Game") }
+                    )
+                }
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		F50824542E256ED000ECD29E /* Random Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50824542E256ED000ECD29E /* Random Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Random Game.app"; path = "/Users/ravitiwari/Desktop/Random Game/build/Debug-iphoneos/Random Game.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				F50824562E256ED000ECD29E /* Random Game */,
-				F50824552E256ED000ECD29E /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		F50824552E256ED000ECD29E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F50824542E256ED000ECD29E /* Random Game.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +86,7 @@
 			mainGroup = F508244B2E256ED000ECD29E;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = F50824552E256ED000ECD29E /* Products */;
+			productRefGroup = F508244B2E256ED000ECD29E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
