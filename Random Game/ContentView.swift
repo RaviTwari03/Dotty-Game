@@ -21,7 +21,7 @@ struct ContentView: View {
                 case "GameInfo":
                     GameInfoScreen()
                 case "Game":
-                    GameScreen()
+                    GameScreen(path: $path)
                 default:
                     WelcomeScreen(
                         onExplore: { path.append("GameInfo") },
